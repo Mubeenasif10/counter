@@ -1,29 +1,26 @@
+import "./Intro.css";
 
 const Intro = () => {
   const user = {
-    name: 'Mubeen',
+    name: "Mubeen",
     age: 10,
-    address: 'Lahore',
-    role: 'IT',
+    address: "Lahore",
+    role: "IT",
   };
 
-  if (user === null) {
-    return <h1>Loading...</h1>;
-  }
-
   return (
-    <div>
+    <div className="intro-card">
       <h1>{user.name}</h1>
-      <h2>{user.age}</h2>
+      <h2>Age: {user.age}</h2>
       <h3>{user.address}</h3>
       <h4>{user.role}</h4>
 
       {user.age > 20 && <p>Eligible for driving</p>}
 
       {user.age >= 18 ? (
-        <p>Eligible to vote</p>
+        <p className="eligible">Eligible to vote</p>
       ) : (
-        <p>Not Eligible to vote</p>
+        <p className="not-eligible">Not Eligible to vote</p>
       )}
     </div>
   );

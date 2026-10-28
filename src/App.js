@@ -1,12 +1,11 @@
-
-import { useState } from 'react';
-import './App.css';
-import Intro from './Intro';
+import { useState } from "react";
+import "./App.css";
+import Intro from "./Intro";
 
 function App() {
   const [count, setCount] = useState(3);
-  const [name, setName] = useState('Mubeen');
-  const [friends] = useState(['Zohaib', 'Jazlan', 'Aun']);
+  const [name, setName] = useState("Mubeen");
+  const [friends] = useState(["Zohaib", "Jazlan", "Aun"]);
   const [age, setAge] = useState(20);
 
   const increment = () => {
@@ -19,7 +18,7 @@ function App() {
   };
 
   const changeNameHandler = () => {
-    setName('Mubeen Asif');
+    setName("Mubeen Asif");
   };
 
   const changeAge = () => {
