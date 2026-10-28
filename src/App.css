@@ -28,6 +28,30 @@
   color: #61dafb;
 }
 
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+  gap: 20px;
+  background-color: beige;
+}
+
+.container button {
+  padding: 20px 40px;
+  font-size: 40px;
+  border-radius: 20px;
+}
+
+.container button:hover {
+  transform: scale(0.9);
+}
+
+.container p {
+  font-size: 40px;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
